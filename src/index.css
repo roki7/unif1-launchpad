@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 背景の光が走るアニメーション */
+@keyframes cyber-grid-flow {
+  0% {
+    background-position: 0 0, 0 0;
+  }
+  100% {
+    background-position: 40px 40px, 40px 40px;
+  }
+}
+
+.animate-cyber-grid {
+  animation: cyber-grid-flow 4s linear infinite;
+}
+
+/* テキストのネオングロー強化 */
+.text-neon-blue {
+  text-shadow: 0 0 5px #3b82f6, 0 0 15px #3b82f6, 0 0 30px #3b82f6;
+}
+.text-neon-purple {
+  text-shadow: 0 0 5px #a855f7, 0 0 15px #a855f7, 0 0 30px #a855f7;
+}
